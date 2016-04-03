@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body{
+            color: #adadad;
+            margin:0;
+            font-size: 62.5%;
+        }
+        .head{
+            width:100%;
+            background:#5FC0CD ;
+            text-align: center;
+        }
+        .head input{
+            width:15%;
+            font-size: 300%;
+            border-radius:8px;
+            border: 0;
+        }
+        .head_zuo{
+            background: #55A8B3;
+            color: white;
+            padding:0.5rem 0;
+            margin:0.5rem 0;
+        }
+        .head_you{
+            background:white;
+            color: #55A8B3;
+            padding:0.5rem 0;
+            margin:1rem -1rem 0;
+        }
+        .you{
+            float:right;
+            width:4rem;
+            margin-top:1.5rem;
+            padding-right:1rem;
+        }
+        .you img{
+            max-width: 2rem;
+        }
+        /*标题栏完成*/
+        .min{
+            width:100%;
+            height:3rem;
+            display:box;
+            display:-moz-box; /* Firefox */
+            display:-webkit-box;
+            margin-top:0.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .min_one{
+            text-align: center;
+            font-size: 250%;
+            padding-top:1rem;
+            -moz-box-flex: 1;
+            -webkit-box-flex: 1;
+            box-flex:1;
+        }
+        .min_two{
+            text-align: center;
+            font-size: 250%;
+            padding-top:1rem;
+            -moz-box-flex: 1;
+            -webkit-box-flex: 1;
+            box-flex:1;
+            border: 2px solid #eff0f4;
+            border-top:none;
+            border-bottom: none;
+        }
+
+        .min_san{
+            text-align: center;
+            font-size: 250%;
+            padding-top:1rem;
+            -moz-box-flex: 1;
+            -webkit-box-flex: 1;
+            box-flex:1;
+        }
+        .sanj{
+            float: right;
+            max-width:1rem;
+            padding-top:0.8rem;
+            margin-right: 1rem;
+        }
+        /*顶部列表头布置完成*/
+        .min_z{
+            width:100%;
+            position:relative;
+        }
+        .min_s{
+            float: left;
+            margin-left: 3rem;
+            margin-top:0.7rem;
+            clear:left
+        }
+        .min_s img{
+            float: left;
+            width:2rem;
+        }
+        .min_s p{
+            font-size: 1.3rem;
+            padding-left:1rem;
+            display: inline;
+        }
+        .min_zhong{
+            float: left;
+            font-size:1.3rem;
+            color: black;
+            margin-left: 6rem;
+            margin-top:0.6rem;
+            clear:left
+        }
+        .min_you{
+            float: right;
+        }
+        .min_you img{
+            float: right;
+            width:1.5rem;
+            padding-right: 2rem;
+        }
+        .min_you p{
+            font-size: 2rem;
+            color: #df5f3d;
+            display: inline;
+            padding-right: 4rem;
+        }
+        .clear{
+            clear:both;
+        }
+        .di{
+            background: #f8fafb;
+            border-top:1px solid #414141;
+            position:fixed;
+            bottom: 0;
+            width:100%;
+        }
+        .di ul{
+            float: left;
+            width:100%;
+        }
+        .di li{
+            list-style: none;
+        }
+        .di_left, .di_right{
+
+            padding-top:1%;
+            text-align: center;
+            float: left;
+        }
+        .di_left{
+            margin-left:25%;
+        }
+        .di img{
+            width:100%;
+        }
+        .di-center{
+            float: left;
+            margin:0 11%;
+        }
+        .di span{
+            display: block;
+            font-size:1.6rem;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="head">
+    <input type="button" class="head_zuo" value="找雇主">
+    <input type="button" class="head_you" value="找护工">
+    <div class="you"><img src="01.png"></div>
+</div>
+<div class="min">
+    <div class="min_one">所在地<img class="sanj" src="02.png"></div>
+    <div class="min_two">食宿<img class="sanj" src="02.png"></div>
+    <div class="min_san">病人情况<img class="sanj" src="02.png"></div>
+</div>
+<hr noshade #f7f8fc width=100%  size="1">
+<div class="min_z">
+    <div class="min_s"> <img src="03.png"><p>服务日期</p></div>
+    <div  class="min_zhong">2015-7-5至2015-7-12</div>
+    <div class="min_you"><a href="../task5.html"> <img src="05.png"></a><p>25/小时</p> </div>
+    <div class="min_s"> <img src="04.png"><p>北京.通州.果园</p></div>
+</div>
+<div class="clear"></div>
+<hr noshade #f7f8fc width="100%" size="1">
+<div class="min_z">
+    <div class="min_s"> <img src="03.png"><p>服务日期</p></div>
+    <div  class="min_zhong">2015-7-5至2015-7-12</div>
+    <div class="min_you"><img src="05.png"><p>35/小时</p> </div>
+    <div class="min_s"> <img src="04.png"><p>北京.通州.果园</p></div>
+</div>
+<div class="clear"></div>
+<hr noshade #f7f8fc width="100%" size="1">
+<div class="min_z">
+    <div class="min_s"> <img src="03.png"><p>服务日期</p></div>
+    <div  class="min_zhong">2015-7-5至2015-7-12</div>
+    <div class="min_you"><img src="05.png"><p>45/小时</p> </div>
+    <div class="min_s"> <img src="04.png"><p>北京.通州.果园</p></div>
+</div>
+<div class="clear"></div>
+<hr noshade #f7f8fc width="100%" size="1">
+<div class="min_z">
+    <div class="min_s"> <img src="03.png"><p>服务日期</p></div>
+    <div  class="min_zhong">2015-7-5至2015-7-12</div>
+    <div class="min_you"><img src="05.png"><p>55/小时</p> </div>
+    <div class="min_s"> <img src="04.png"><p>北京.通州.果园</p></div>
+</div>
+<div class="clear"></div>
+<div class="min_z">
+    <div class="min_s"> <img src="03.png"><p>服务日期</p></div>
+    <div  class="min_zhong">2015-7-5至2015-7-12</div>
+    <div class="min_you"><img src="05.png"><p>55/小时</p> </div>
+    <div class="min_s"> <img src="04.png"><p>北京.通州.果园</p></div>
+</div>
+<div class="clear"></div>
+
+<div class="di">
+    <ul>
+        <li>
+            <div class="di_left"><img src="06.png"> <span>首页</span></div>
+        </li>
+
+        <li>
+            <div class="di-center"><img src="07.png"> </div>
+        </li>
+
+        <li>
+            <div class="di_right"><img src="08.png"><span>我的</span> </div>
+        </li>
+    </ul>
+</div>
+<div class="clear"></div>
+</body>
+</html>

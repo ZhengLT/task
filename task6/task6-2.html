@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>投票页面</title>
+    <style type="text/css">
+        body{
+            font-size: 62.5%;
+            color: white;
+        }
+        .container{
+            width:100%;
+            max-width: 750px;
+            background: #29BDE0;
+            margin:0 auto;
+        }
+        .header{
+            width:100%;
+            text-align: center;
+        }
+        .header p{
+            font-size: 1.8rem;
+            display: inline-block;
+            margin: 1.8rem 38% 0;
+        }
+        .san{
+            width:0;
+            height: 0;
+            border-top:20px;
+            border-left:10px;
+            border-right:10px;
+            border-style: solid;
+            border-color:#B9E9F5 transparent transparent;
+            display: block;
+            position: absolute;
+            bottom:-1.2rem;
+            left:3rem;
+        }
+        .main{
+            width:100%;
+        }
+        .main-top{
+            width:100%;
+            background:#B9E9F5 ;
+            position: relative;
+        }
+        .main-top p{
+            color: rgba(0, 0, 0, 0.83);
+            font-size: 1.7rem;
+            padding:1rem 0 1rem 2rem;
+        }
+        button{
+            width: 2rem;
+            height: 2rem;
+            border-radius: 1rem;
+            background: #FBB435;
+            cursor:pointer;
+            border:none;
+            right: 1rem;
+            top:1rem;
+            position:absolute;
+        }
+       /* .yuan{
+            width: 2rem;
+            height: 2rem;
+            background: #FBB435;
+            border-radius: 1rem;
+        }*/
+        .yuan-s{
+            width: 0;
+            height: 0;
+            border-left: 1.4rem solid #FFFFFF;
+            border-top: 0.7rem solid transparent;
+            border-bottom: 0.7rem solid transparent;
+            position:absolute;
+            top:0.3rem;
+            left:0.5rem;
+        }
+        .yang{
+            font-size: 1.3rem;
+            padding-left:3rem;
+            padding-bottom: 0.7rem;
+        }
+        .main-bottom{
+            width:100%;
+        }
+        .main-inner{
+            width: 20%;
+
+            text-align: center;
+            margin:0 2.8rem;
+            display: inline-block;
+
+        }
+        .main-inner-d{
+            border:4px solid white;
+        }
+        .text{
+            font-size:2rem;
+            padding:2rem 0;
+            background:#F5C97B;
+            color:black;
+        }
+        .biaoji{
+            font-size: 1.3rem;
+            background: #83B09A;
+        }
+        .tup{
+            visibility:hidden;
+        }
+        .tup img{
+            padding: 1rem 0;
+        }
+        .main-inner:hover .tup{
+            visibility: visible;
+        }
+        .bottom {
+            width: 100%;
+            max-width: 750px;
+            border-top: 2px solid white;
+            background: #29BDE0;
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+        }
+        .bottom-box{
+            width:80%;
+            background: #FBB435;
+            font-size:2rem;
+            border: 0;
+            height:5rem;
+            margin:1.8rem auto;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="01.png">
+        <p>投票</p>
+        <img src="02.png">
+    </div>
+    <div class="main">
+        <div class="main-top">
+            <p>发言讨论结束，大家请投票</p>
+            <div class="san"></div>
+            <audio src="财富自由.mp3" controls="controls" preload id="music" hidden>
+            </audio>
+            <button id="a" onclick="a()">
+
+                    <div class="yuan-s"></div>
+
+            </button>
+            <script>
+                function a() {
+                    var audio = document.getElementById('music');
+                    if (audio.paused) {
+                        audio.play();//audio.play();// 播放
+                    }
+                    else {
+                        audio.pause();// 暂停
+                    }
+                }
+            </script>
+
+
+        </div>
+        <p class="yang">点击得票数最多人的头像</p>
+        <div class="main-bottom">
+            <div class="main-inner">
+            <div class="main-inner-d">
+                <div class="text">水手</div>
+                <div class="biaoji">1号</div>
+            </div>
+            <div class="tup">
+                <img src="img.png">
+            </div>
+        </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">水民</div>
+                    <div class="biaoji">1号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">水手</div>
+                    <div class="biaoji">2号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">警察</div>
+                    <div class="biaoji">3号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">法官</div>
+                    <div class="biaoji">4号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">狙击手</div>
+                    <div class="biaoji">5号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">杀手</div>
+                    <div class="biaoji">6号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">水手</div>
+                    <div class="biaoji">7号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">医生</div>
+                    <div class="biaoji">8号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">水手</div>
+                    <div class="biaoji">9号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">水手</div>
+                    <div class="biaoji">10号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+            <div class="main-inner">
+                <div class="main-inner-d">
+                    <div class="text">水手</div>
+                    <div class="biaoji">11号</div>
+                </div>
+                <div class="tup">
+                    <img src="img.png">
+                </div>
+            </div>
+
+            <div class="bottom">
+              <a style="text-decoration: none" href="../task6-1/task6-1.html"> <input type="button" class="bottom-box"  value="投死"></a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
